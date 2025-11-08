@@ -15,7 +15,7 @@ const Home: React.FC = () => {
           </div>
 
           <div className="icone-social">
-            {/* Ícones Font Awesome serão adicionados via biblioteca React */}
+            {}
             <a href="https://www.linkedin.com/in/ygorcarvalhodev/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
             <a href="https://github.com/Ygor-CCarvalho" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             <a href="mailto:ygorcarvalhodev@gmail.com" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
         </section>
       </div>
       {}
-      <img src="/src/assets/images/principal/image.svg" alt="Ilustração de um computador" />
+      <img src="./src/assets/images/principal/image.svg" alt="Ilustração de um computador" />
     </section>
   );
 };

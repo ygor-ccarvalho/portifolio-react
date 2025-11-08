@@ -39,7 +39,7 @@
 
 .home .social .social-sobre a:hover {
     color: var(--cor-ativo);
-    background-color: var(--cor-bg-#fff);
+    background-color: var(--cor-bg-ativo);
 }
 
 .home .social .icone-social {

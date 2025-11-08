@@ -8,7 +8,7 @@ const About: React.FC = () => {
       <div className="sobre-container">
         <div className="perfil">
           {/* A imagem será tratada como um asset */}
-          <img src="/src/assets/images/perfil/perfil.jpg" alt="Foto de perfil" />
+          <img src="./src/assets/images/perfil/perfil.jpg" alt="Foto de perfil" />
         </div>
 
         <div className="sobre-informacao">
