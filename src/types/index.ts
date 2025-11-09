@@ -16,3 +16,13 @@ export interface TechSkill {
   imageAlt: string;
   badgeLink?: string;
 }
+
+export interface profileImage {
+  src: string;
+  alt: string;
+}
+
+export interface mainImage {
+  imageSrc: string;
+  imageAlt: string;
+}

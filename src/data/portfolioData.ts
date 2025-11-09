@@ -1,12 +1,20 @@
 import type { Project, TechSkill } from '../types';
+
+// Imports de imagens
 import node from '../assets/images/tecnologias/node.webp';
-import typescript from '../assets/images/tecnologias/typescript.png'
+import typescript from '../assets/images/tecnologias/typescript.png';
 import react from '../assets/images/tecnologias/react.png';
 import javascript from '../assets/images/tecnologias/javascript.png';
 import html from '../assets/images/tecnologias/html.png';
 import css from '../assets/images/tecnologias/css.png';
 
-// Cria um dicionário com o nome da tecnologia como chave
+import telegramBot from '../assets/images/imagens-projetos/telegram-bot.gif';
+import advice from '../assets/images/imagens-projetos/advice.gif';
+import gitApi from '../assets/images/imagens-projetos/git-api.gif';
+
+import ccna1 from '../assets/images/tecnologias/ccna1.png';
+import networkSecurity from '../assets/images/tecnologias/network_security.png';
+
 export const techImages: Record<string, string> = {
   node,
   typescript,
@@ -16,6 +24,8 @@ export const techImages: Record<string, string> = {
   css
 };
 
+
+
 export const projectsData: Project[] = [
   {
     title: "Teste Técnico Furia - Bot para Telegram",
@@ -23,7 +33,7 @@ export const projectsData: Project[] = [
     technologies: ["node", "typescript"],
     liveLink: "https://github.com/ygor-ccarvalho/telegram-bot-furia",
     githubLink: "https://github.com/ygor-ccarvalho/telegram-bot-furia",
-    imageSrc: "./src/assets/images/imagens-projetos/telegram-bot.gif",
+    imageSrc: telegramBot,
     imageAlt: "Gif mostando o projeto funcionando."
   },
   {
@@ -32,7 +42,7 @@ export const projectsData: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://ygor-ccarvalho.github.io/advice-generator-app/",
     githubLink: "https://github.com/ygor-ccarvalho/advice-generator-app",
-    imageSrc: "./src/assets/images/imagens-projetos/advice.gif",
+    imageSrc: advice,
     imageAlt: "Gif mostando o projeto funcionando."
   },
   {
@@ -41,17 +51,18 @@ export const projectsData: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript"],
     liveLink: "https://ygor-ccarvalho.github.io/GitHub-API/",
     githubLink: "https://github.com/ygor-ccarvalho/GitHub-API",
-    imageSrc: "./src/assets/images/imagens-projetos/git-api.gif",
+    imageSrc: gitApi,
     imageAlt: "Gif mostando o projeto funcionando."
   }
 ];
 
 export const techSkillsData: TechSkill[] = [
-  { name: "HTML", imageSrc: "./src/assets/images/tecnologias/html.png", imageAlt: "logo html" },
-  { name: "CSS", imageSrc: "./src/assets/images/tecnologias/css.png", imageAlt: "logo css" },
-  { name: "JavaScript", imageSrc: "./src/assets/images/tecnologias/javascript.png", imageAlt: "logo Javascript" },
-  { name: "TypeScript", imageSrc: "./src/assets/images/tecnologias/Typescript.png", imageAlt: "logo Typescript" },
-  { name: "React", imageSrc: "./src/assets/images/tecnologias/react.png", imageAlt: "logo React" },
-  { name: "CCNA1", imageSrc: "./src/assets/images/tecnologias/ccna1.png", imageAlt: "logo CCNA1", badgeLink: "https://www.credly.com/badges/d15b44b2-6d58-4455-8a71-2b3f89446348" },
-  { name: "Network Security", imageSrc: "./src/assets/images/tecnologias/network_security.png", imageAlt: "logo Network Security", badgeLink: "https://www.credly.com/badges/4e2f1169-1c28-435c-a822-75972e33e68a" },
+  { name: "HTML", imageSrc: html, imageAlt: "logo HTML" },
+  { name: "CSS", imageSrc: css, imageAlt: "logo CSS" },
+  { name: "JavaScript", imageSrc: javascript, imageAlt: "logo JavaScript" },
+  { name: "TypeScript", imageSrc: typescript, imageAlt: "logo TypeScript" },
+  { name: "React", imageSrc: react, imageAlt: "logo React" },
+  { name: "CCNA1", imageSrc: ccna1, imageAlt: "logo CCNA1", badgeLink: "https://www.credly.com/badges/d15b44b2-6d58-4455-8a71-2b3f89446348" },
+  { name: "Network Security", imageSrc: networkSecurity, imageAlt: "logo Network Security", badgeLink: "https://www.credly.com/badges/4e2f1169-1c28-435c-a822-75972e33e68a" },
 ];
+

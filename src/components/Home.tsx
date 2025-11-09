@@ -1,3 +1,4 @@
+import pcImage from '../assets/images/principal/image.svg';
 import React from 'react';
 import '../styles/Home.css';
 import {
@@ -23,8 +24,7 @@ const Home: React.FC = () => {
           </div>
         </section>
       </div>
-      {}
-      <img src="./src/assets/images/principal/image.svg" alt="Ilustração de um computador" />
+      <img src={pcImage} alt="Ilustração de um computador" />
     </section>
   );
 };
