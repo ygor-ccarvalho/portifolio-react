@@ -20,7 +20,7 @@ img {
     max-width: 100%;
 }
 
-/* Variáveis CSS */
+
 :root {
     --cor-padrao: #000000;
     --background: #FFFFFF;
@@ -30,7 +30,7 @@ img {
     --max-width-size: 1920px;
 }
 
-/* Estilos Base */
+
 html {
     color: var(--cor-padrao);
     scroll-behavior: smooth;
@@ -43,7 +43,7 @@ html {
 body {
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif; /* A fonte Roboto será importada no index.html */
+    font-family: 'Roboto', sans-serif; 
 }
 
 main {

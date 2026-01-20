@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Header.css';
 
 
 const Header: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header" id="header">
       <div className="header-container">
@@ -11,19 +17,16 @@ const Header: React.FC = () => {
         </a>
 
         <nav>
-          {/* O menu hamburger será implementado com estado em React */}
-          <input type="checkbox" id="menu-hamburguer" />
-
-          <label htmlFor="menu-hamburguer">
+          <button className="menu-button" onClick={toggleMenu}>
             <div className="menu">
-              <span className="hamburguer"></span>
+              <span className={`hamburguer ${isMenuOpen ? 'open' : ''}`}></span>
             </div>
-          </label>
+          </button>
 
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#sobre">Sobre</a></li>           
-            <li><a href="#projetos">Projetos</a></li>
+          <ul className={isMenuOpen ? 'open' : ''}>
+            <li><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
+            <li><a href="#sobre" onClick={() => setIsMenuOpen(false)}>Sobre</a></li>
+            <li><a href="#projetos" onClick={() => setIsMenuOpen(false)}>Projetos</a></li>
           </ul>
         </nav>
       </div>

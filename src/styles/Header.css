@@ -41,15 +41,18 @@
     text-decoration: underline;
 }
 
-/* Estilos do Menu Hamburguer (a lógica de exibição será em React) */
-.header .menu {
-    display: none; /* Inicialmente oculto, controlado por media queries */
+/* Estilos do Menu Hamburguer */
+.header .menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
     width: 60px;
     height: 60px;
     align-self: flex-end;
 }
 
-.header nav label {
+.header .menu {
     display: flex;
     flex-direction: column;
 }
@@ -84,27 +87,27 @@
     bottom: -10px;
 }
 
-.header input {
-    display: none;
-}
-
-.header input:checked~label .hamburguer {
+.header .hamburguer.open {
     transform: rotate(45deg);
 }
 
-.header input:checked~label .hamburguer:before {
+.header .hamburguer.open:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-.header input:checked~label .hamburguer:after {
+.header .hamburguer.open:after {
     transform: rotate(90deg);
     top: 0;
 }
 
 /* Media Query para o menu hamburguer */
 @media (max-width: 900px) {
-    .header .menu {
+
+.header {
+    width: 100vw;
+}
+    .header .menu-button {
         display: block;
     }
 
@@ -112,7 +115,7 @@
         display: none;
     }
 
-    .header input:checked~ul {
+    .header nav ul.open {
         display: block;
     }
 
