@@ -6,19 +6,22 @@
     justify-content: space-between;
     align-items: center;
     height: 85vh;
+    
 }
 
 .home p {
-    font-size: 28.83px;
+    font-size: 1.802rem;
+   
 }
 
 .home span {
-    font-size: 36.49px;
+    font-size: 2.281rem;
     font-weight: 700;
 }
 
 .home img {
     width: 35%;
+   
 }
 
 .home .social {
@@ -27,14 +30,18 @@
 }
 
 .home .social .social-sobre {
-    margin: 40px 0;
+    margin: 2.5rem 0;
+    
 }
 
 .home .social .social-sobre a {
-    border-radius: 50px;
-    padding: 10px 30px;
+    border-radius: 3.125rem;
+
+    padding: 0.625rem 1.875rem;
+   
     border-style: solid;
-    font-size: 20.25px;
+    font-size: 1.266rem;
+    
 }
 
 .home .social .social-sobre a:hover {
@@ -45,32 +52,39 @@
 .home .social .icone-social {
     display: flex;
     justify-content: center;
-    font-size: 28.83px;
+    font-size: 1.802rem;
+    
 }
 
 .home .social .icone-social a {
-    margin: 10px;
+    margin: 0.625rem;
+   
 }
 
 .home:after {
-
-    height: 35px;
-    bottom: 40px;
-    right: 600px;
+    height: 2.188rem;
+    bottom: 2.5rem;
+    right: 37.5rem;
     position: absolute;
-
 }
 
 @media (max-width: 900px) {
-
-
     .home {
-        width: 900px;
+        max-width: 100%;
         justify-content: center;
         align-items: center;
+        padding: 0 1.25rem;
     }
 
     .home img {
         display: none;
+    }
+
+    .home p,
+    .home span {
+        text-align: center;
+    }
+    .social{
+        align-items: center;
     }
 }
