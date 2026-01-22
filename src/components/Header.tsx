@@ -20,6 +20,8 @@ const Header: React.FC = () => {
           <button className="menu-button" onClick={toggleMenu}>
             <div className="menu">
               <span className={`hamburguer ${isMenuOpen ? 'open' : ''}`}></span>
+              <span className={`hamburguer ${isMenuOpen ? 'open' : ''}`}></span>
+              <span className={`hamburguer ${isMenuOpen ? 'open' : ''}`}></span>
             </div>
           </button>
 
